@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-burgundy: #70263D;
+  --color-burgundy-dark: #531c2d;
+  --color-burgundy-light: #8a304d;
+  --color-burgundy-subtle: rgba(112, 38, 61, 0.08);
+  --color-pink-accent: #D85C82;
+  --color-pink-soft: #F9E2E9;
+  --color-blush-cream: #F6EDE8;
+  --color-blush-card: #FCF8F5;
+  --color-blush-surface: #F3E5DD;
+  --color-blush-border: #E5D2C8;
+  --color-cobalt: #3155C6;
+  --color-cobalt-dark: #24419f;
+  --color-cobalt-subtle: rgba(49, 85, 198, 0.09);
+  --color-butter: #F3D36B;
+  --color-butter-light: #FCF5DF;
+  --color-charcoal: #343238;
+  --color-charcoal-muted: #635F6B;
+  --font-serif: "Newsreader", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background-color: var(--color-blush-cream);
+  color: var(--color-charcoal);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  selection-background-color: var(--color-pink-accent);
+  selection-color: #ffffff;
+}
+
+/* Custom delicate scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F6EDE8;
+}
+::-webkit-scrollbar-thumb {
+  background: #D85C82;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #70263D;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
